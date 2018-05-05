@@ -10,26 +10,69 @@
             html, body
             {
                 height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
             }
             
             .container
             {
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
-                border: 1px solid teal;
+                flex-direction: column;
+                align-items: center;
+                border: 2px solid teal;
+                border-radius: 25px;
+                height: 100%;
+                width: 50%;
             }
             
-            .link-1
+            .header
             {
-                border: 1px solid teal;
+                font-size: 3rem;
+                color: teal;
+            }
+            
+            .project-container
+            {
+                height: 80%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .link-1,
+            .link-2
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3rem;
+                margin: 2rem 0;
+                height: 33%;
+                width: 33%;
+                border: 2px solid teal;
+                border-radius: 10%;
+            }
+            
+            .link-1 a,
+            .link-2 a
+            {
+                text-decoration: none;
+                color: teal;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="link-1">
-                <a href="/udemyjavascriptcourse/Budgety/index.html">Budget App</a>
+            <header class="header">My JS Projects</header>
+            <div class="project-container">
+                <div class="link-1">
+                    <a href="/udemyjavascriptcourse/Budgety/index.html">Budget App</a>
+                </div>
+                <div class="link-2">
+                    <a href="/udemyjavascriptcourse/pig-game/index.html">Pig Game</a>
+                </div>
             </div>
         </div>
     </body>
