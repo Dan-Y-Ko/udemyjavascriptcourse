@@ -53,14 +53,28 @@
                 width: 33%;
                 border: 2px solid teal;
                 border-radius: 10%;
+                overflow: hidden;
             }
             
             .link-1 a,
             .link-2 a
             {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 text-decoration: none;
                 color: teal;
             }
+            
+            .link-1 a:hover,
+            .link-2 a:hover
+            {
+                height: 100%;
+                width: 100%;
+                background-color: teal;
+                color: white;
+            }
+            
         </style>
     </head>
     <body>
